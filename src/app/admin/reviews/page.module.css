@@ -1,0 +1,23 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--color-text-inverse);
+}
+
+.subtitle {
+  color: var(--color-text-inverse);
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
