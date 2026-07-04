@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import Image from "next/image";
 import toast from "react-hot-toast";
-import "boxicons/css/boxicons.min.css";
 import { ROUTES } from "@/constants";
 import type { AdminReviewListItem } from "@/services/admin-review.service";
 import styles from "./ReviewTable.module.css";
