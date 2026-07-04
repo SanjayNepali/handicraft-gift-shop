@@ -4,10 +4,9 @@ import styles from "./ProductGrid.module.css";
 
 interface ProductGridProps {
   products: ProductCardType[];
-  onAddToCart?: (productId: string) => void;
 }
 
-export default function ProductGrid({ products, onAddToCart }: ProductGridProps) {
+export default function ProductGrid({ products }: ProductGridProps) {
   if (products.length === 0) {
     return null;
   }
@@ -15,11 +14,7 @@ export default function ProductGrid({ products, onAddToCart }: ProductGridProps)
   return (
     <div className={styles.grid}>
       {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-          onAddToCart={onAddToCart}
-        />
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   );
